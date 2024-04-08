@@ -8,4 +8,6 @@ services:
     image: node-bullseye
     container_name: aptlyui
     command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - ../:/workspace
     

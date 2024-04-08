@@ -1,10 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/alpine
 {
-	"name": "Alpine",
+	"name": "AptlyCodeEnv",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"dockerComposeFile": ["./docker-compose.yml"],
 	
+  // "build": {
+	// 	"dockerfile": "Dockerfile"
+  // },
+  // "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"dockerComposeFile": ["./docker-compose.yml"],
   "service": "aptlyui",
   "workspaceFolder": "/workspace",
 	// Features to add to the dev container. More info: https://containers.dev/features.
